@@ -1,0 +1,67 @@
+body{
+	background: linear-gradient(to bottom, #ccffff 0%, #ffccff 70%);
+}
+
+p{
+	font-size: 19px;
+	text-align: justify; 
+}
+
+td, th {
+          border: 2px solid #000000;
+          background: linear-gradient(135deg,  #ccffff 0%, #ffccff 70%);
+          text-align: left;
+          padding: 20px;
+        }
+ul.left li{
+	font-size: 30px;
+	color: red;
+}
+.wrapper{
+  height: 100px;
+  width: 500px;
+  position: relative;
+  background: linear-gradient(to bottom, #ff66ff 0%, #ff66ff 89%);
+  border-radius: 10px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  animation: animate 1.5s linear infinite;
+}
+.wrapper .display,
+.wrapper span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .display{
+  z-index: 999;
+  height: 85px;
+  width: 485px;
+  background: #16191e;
+  border-radius: 6px;
+  text-align: center;
+}
+.display #time{
+  line-height: 85px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(to bottom, #ff66ff 0%, #ff66ff 89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+.wrapper span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.wrapper span:first-child{
+  filter: blur(9px);
+}
+.wrapper span:last-child{
+  filter: blur(20px);
+}
